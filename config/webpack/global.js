@@ -12,7 +12,6 @@ var NODE_ENV = process.env.NODE_ENV || 'production';
 var DEVELOPMENT = NODE_ENV === 'production' ? false : true;
 var stylesLoader = 'css-loader?sourceMap!postcss-loader!sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true';
 
-
 module.exports = function (_path) {
 
   // 源码根目录
