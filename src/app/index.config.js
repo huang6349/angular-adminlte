@@ -1,11 +1,10 @@
 'use strict';
 
 function config($logProvider) {
-	'ngInject';
+  'ngInject';
 
-  // Enable log
+  // 开启日志
   $logProvider.debugEnabled(true);
-  
 }
 
 export default config;
