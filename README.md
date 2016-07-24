@@ -1,2 +1,2 @@
 # angular-adminlte
-AngularJS + AdminLTE + Webpack
+Angular AdminLTE Webpack ES6 Project
