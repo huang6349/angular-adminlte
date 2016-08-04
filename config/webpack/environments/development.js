@@ -17,7 +17,15 @@ var development = function (_path) {
       contentBase: './dist',
       info: true,
       hot: true,
-      inline: true
+      inline: true,
+      proxy: {
+        '/api/*': {
+          target: 'http://127.0.0.1:8360',
+          rewrite: function (req) {
+            req.url = req.url.replace(/^\/api/, '');
+          }
+        }
+      }
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin()
