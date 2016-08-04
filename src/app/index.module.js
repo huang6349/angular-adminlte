@@ -14,6 +14,7 @@ const App = angular.module('angular-adminlte', [
   'ui.router',
   'ui.bootstrap',
   'oc.lazyLoad',
+  'ng-token-auth',
 
   // 核心
   require("./core/core.module").name,
